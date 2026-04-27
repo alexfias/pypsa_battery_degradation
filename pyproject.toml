@@ -1,0 +1,23 @@
+[project]
+name = "pypsa-battery-degradation"
+version = "0.1.0"
+description = "Battery degradation modelling for PyPSA-based energy system studies"
+authors = [{name = "Naime Ahmadi, Alexander Kies, Jakub Jurasz"}]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "scipy",
+    "xarray",
+    "netcdf4",
+    "pypsa",
+    "rainflow",
+]
+
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
